@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/user", userRouter);
 app.use("/admin", adminRouter);
 app.get('/', (req, res) => {
-    res.send("Welcome To API for GFG Hackathon");
+    res.send("Welcome To API for IMPETUS");
 });
 try {
     mongoose.connect('mongodb+srv://hvacProject:hvacProject123@hvacproject.keg4oua.mongodb.net/?retryWrites=true&w=majority&appName=hvacProject', {dbName: "hvacProject" });
