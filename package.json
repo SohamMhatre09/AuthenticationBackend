@@ -4,7 +4,7 @@
   "description": "Backend App",
   "main": "./index.js",
   "scripts": {
-    "start": "Node ./index.js"
+    "start": "node ./index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -13,4 +13,3 @@
     "mongoose": "^8.2.4"
   }
 }
-
