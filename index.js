@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const userRouter = require("./routes/user");
-const adminRouter = require("./routes/admin");
 
 
 const PORT = process.env.PORT || 3000;
@@ -11,7 +10,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/user", userRouter);
-app.use("/admin", adminRouter);
 app.get('/', (req, res) => {
     res.send("Welcome To API for IMPETUS");
 });
